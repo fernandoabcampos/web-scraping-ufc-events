@@ -1,11 +1,21 @@
 
-<h1 align="center">Dataset: Historial de eventos del UFC (<i>Ultimate Fighting Championship</i>)</h1>
+<div style="width: 100%; clear: both;">
+<div style="float: left; width: 50%;">
+<img src="http://www.uoc.edu/portal/_resources/common/imatges/marca_UOC/UOC_Masterbrand.jpg", align="left">
+</div>
+<div style="float: right; width: 50%;">
+<p style="margin: 0; padding-top: 22px; text-align:right;">M2.851 - Tipología y ciclo de vida de los datos aula 1 · Práctica 1</p>
+<p style="margin: 0; text-align:right;">2018-1 · Máster universitario en Ciencia de datos (Data science)</p>
+<p style="margin: 0; text-align:right; padding-button: 100px;">Prof. Colaboradora: <b>Laia Subirats Maté</b></p>
+<p style="margin: 0; text-align:right; padding-button: 100px;">Alumno: <b>Fernando Antonio Barbeiro Campos</b> - <a href="">fbarbeiro@uoc.edu</a></p>
+</div>
+</div>
+<div style="width:100%;">&nbsp;</div>
 
-<h2 align="right">UOC - Máster en Data Science / Tipología y ciclo de vida de los datos</h2>
-<h3 align="right">Prof. Colaboradora: Laia Subirats Maté</h3>
-<h3 align="right">Alumno: Fernando Antonio Barbeiro Campos - <a href="">fbarbeiro@uoc.edu</a></h3>
 
 
+### Dataset: 
+Historial de eventos del UFC (*Ultimate Fighting Championship*)
 ### Descripción
 Un dataset completo con todos los eventos deportivos de MMA (*mixed martial arts*) más famoso del mundo, los deportistas, resultados, entre otros.
 
@@ -179,7 +189,7 @@ table_past_events = soup.find('table', {'id': 'Past_events'})
 rows = table_past_events.findAll('tr')
 
 for row in rows:
-    sleep(0.2) # Wait 10 sec, recommendations explained below
+    sleep(10) # Wait 10 sec, recommendations explained below
     cells = row.findAll('td')
     if len(cells) > 0 :
         links = cells[1].findAll('a')
